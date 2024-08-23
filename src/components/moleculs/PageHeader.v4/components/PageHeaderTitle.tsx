@@ -1,6 +1,6 @@
 import { Divider, Stack, Typography } from "@mui/material";
 import { SkeletonWrap } from "../../../atoms/SkeletonWrap";
-import { usePageHeaderContext } from "../PageHeaderWithLoader";
+import { usePageHeaderContext } from "../PageHeader";
 
 export type IProps = {
   text: string;

@@ -53,7 +53,6 @@ export const HoverPopover = ({
           "&:hover": !disableHover
             ? { backgroundColor: "rgba(255, 255, 255, 0.12)" }
             : {},
-          //   p: 0.5,
           borderRadius: 1,
           display: "inline-block",
           ...childrenSx,

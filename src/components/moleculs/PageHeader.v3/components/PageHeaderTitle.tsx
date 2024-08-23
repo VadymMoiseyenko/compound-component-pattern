@@ -13,14 +13,7 @@ export const PageHeaderTitle = (props: IProps) => {
   return (
     <Stack gap={2} flexDirection="row" alignItems="center">
       {action}
-      <Typography
-        fontSize="32px"
-        lineHeight="38px"
-        fontWeight={400}
-        color="white"
-      >
-        {text}
-      </Typography>
+      <Typography variant="h4">{text}</Typography>
       {info}
       {extraAction && (
         <Divider
@@ -28,9 +21,7 @@ export const PageHeaderTitle = (props: IProps) => {
           flexItem
           sx={{
             width: "1px",
-            marginY: "unset",
             bgcolor: "rgba(255, 255, 255, 0.7)",
-            color: "rgba(255, 255, 255, 0.7)",
           }}
         />
       )}
@@ -38,5 +29,4 @@ export const PageHeaderTitle = (props: IProps) => {
       {extraAction}
     </Stack>
   );
-  // </SkeletonWrap>
 };

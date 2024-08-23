@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { SkeletonWrap } from "../../../atoms/SkeletonWrap";
 import { HoverPopover } from "../../../atoms/HoverPopover";
-import { usePageHeaderContext } from "../PageHeaderWithLoader";
+import { usePageHeaderContext } from "../PageHeader";
 
 interface IProps {
   subtitleText: string;

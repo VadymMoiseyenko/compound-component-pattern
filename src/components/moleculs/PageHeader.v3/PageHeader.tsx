@@ -9,27 +9,10 @@ type NewPageHeaderProps = {
   breadcrumbs?: ReactNode;
 };
 
-export const NewPageHeader = ({
-  actionBar,
-  title,
-  subTitle,
-  subtle,
-  breadcrumbs,
-}: NewPageHeaderProps) => (
-  <Box>
-    <Box>{title}</Box>
-    <Box>{subTitle}</Box>
-    <Box>{subtle}</Box>
-    <Box>{breadcrumbs}</Box>
-    <Box>{actionBar}</Box>
-  </Box>
-);
-
 export const PageHeader = ({
   actionBar,
   title,
   subTitle,
-  // subtle,
   breadcrumbs,
 }: NewPageHeaderProps) => (
   <Box>

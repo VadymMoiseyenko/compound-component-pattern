@@ -1,7 +1,7 @@
 import { Link, Stack, Typography } from "@mui/material";
 import { SkeletonWrap } from "../../../atoms/SkeletonWrap";
 import { Link as RouterLink } from "react-router-dom";
-import { usePageHeaderContext } from "../PageHeaderWithLoader";
+import { usePageHeaderContext } from "../PageHeader";
 
 interface IProps {
   linkText: string;

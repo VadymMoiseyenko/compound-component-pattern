@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
 import { Circle } from "@mui/icons-material";
 import { SkeletonWrap } from "../../../atoms/SkeletonWrap";
-import { usePageHeaderContext } from "../PageHeaderWithLoader";
+import { usePageHeaderContext } from "../PageHeader";
 
 export const PageHeaderSubtitle = ({ leftSide, rightSide, extraInfo }) => {
   const { isLoading } = usePageHeaderContext();

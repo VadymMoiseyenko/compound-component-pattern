@@ -11,7 +11,6 @@ export const SkeletonWrap = ({
   isLoading ? (
     <Skeleton
       sx={{
-        // fontSize: "24px",
         bgcolor: "rgba(255, 255, 255, 0.1)",
       }}
     >
