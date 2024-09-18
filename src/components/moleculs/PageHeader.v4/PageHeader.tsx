@@ -1,9 +1,12 @@
 import { Box, Stack } from "@mui/material";
 import { createContext, ReactNode, useContext } from "react";
 import { SkeletonWrap } from "../../atoms/SkeletonWrap";
-import { PageHeaderTitle } from "../PageHeader.v3/components/PageHeaderTitle";
+import { Title } from "./components/Title";
+import { Subtitle } from "./components/Subtitle";
+import { SubtitleLinkItem } from "./components/SubtitleLinkItem";
+import { SubtitleItem } from "./components/SubtitleItem";
 
-type NewPageHeaderProps = {
+export type NewPageHeaderProps = {
   actionBar?: ReactNode;
   title?: ReactNode;
   subTitle?: ReactNode;
@@ -12,7 +15,7 @@ type NewPageHeaderProps = {
   isLoading?: boolean;
 };
 
-const PageHeaderContext = createContext({ isLoading: false });
+export const PageHeaderContext = createContext({ isLoading: false });
 
 export const usePageHeaderContext = () => useContext(PageHeaderContext);
 
@@ -48,4 +51,7 @@ export const PageHeader = ({
   );
 };
 
-PageHeader.Title = PageHeaderTitle;
+PageHeader.Title = Title;
+PageHeader.SubTitle = Subtitle;
+PageHeader.SubtitleLinkItem = SubtitleLinkItem;
+PageHeader.SubtitleItem = SubtitleItem;

@@ -3,13 +3,13 @@ import { SkeletonWrap } from "../../../atoms/SkeletonWrap";
 import { HoverPopover } from "../../../atoms/HoverPopover";
 import { usePageHeaderContext } from "../PageHeader";
 
-interface IProps {
+export interface IProps {
   subtitleText: string;
   hightlightedText: string;
   hoverText: string;
 }
 
-export const PageHeaderSubtitleItem = ({
+export const SubtitleItem = ({
   subtitleText,
   hightlightedText,
   hoverText,

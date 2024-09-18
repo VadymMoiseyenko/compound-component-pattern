@@ -2,8 +2,8 @@ import { Divider, Stack, Typography } from "@mui/material";
 
 export type IProps = {
   text: string;
-  action: React.ReactNode;
-  info: React.ReactNode;
+  action?: React.ReactNode;
+  info?: React.ReactNode;
   extraAction?: React.ReactNode;
 };
 

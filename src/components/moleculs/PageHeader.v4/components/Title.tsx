@@ -9,7 +9,7 @@ export type IProps = {
   extraAction?: React.ReactNode;
 };
 
-export const PageHeaderTitle = (props: IProps) => {
+export const Title = (props: IProps) => {
   const { text, action, info, extraAction } = props;
   const { isLoading } = usePageHeaderContext();
 

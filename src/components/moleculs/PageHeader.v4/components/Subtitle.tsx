@@ -3,7 +3,13 @@ import { Circle } from "@mui/icons-material";
 import { SkeletonWrap } from "../../../atoms/SkeletonWrap";
 import { usePageHeaderContext } from "../PageHeader";
 
-export const PageHeaderSubtitle = ({ leftSide, rightSide, extraInfo }) => {
+export interface IProps {
+  leftSide: React.ReactNode;
+  rightSide?: React.ReactNode;
+  extraInfo?: React.ReactNode;
+}
+
+export const Subtitle = ({ leftSide, rightSide, extraInfo }: IProps) => {
   const { isLoading } = usePageHeaderContext();
   return (
     <Stack direction="row" alignItems="center" gap={2} sx={{ mt: 1 }}>

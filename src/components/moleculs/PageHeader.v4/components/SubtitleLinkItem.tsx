@@ -3,17 +3,13 @@ import { SkeletonWrap } from "../../../atoms/SkeletonWrap";
 import { Link as RouterLink } from "react-router-dom";
 import { usePageHeaderContext } from "../PageHeader";
 
-interface IProps {
+export interface IProps {
   linkText: string;
   textBeforeLink: string;
   to: string;
 }
 
-export const PageHeaderSubtitleLinkItem = ({
-  linkText,
-  textBeforeLink,
-  to,
-}: IProps) => {
+export const SubtitleLinkItem = ({ linkText, textBeforeLink, to }: IProps) => {
   const { isLoading } = usePageHeaderContext();
   return (
     <Stack direction="row" gap={1}>

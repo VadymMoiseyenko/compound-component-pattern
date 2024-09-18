@@ -5,10 +5,6 @@ import { Close } from "@mui/icons-material";
 import { Button } from "../../atoms/Button";
 import { Status } from "../../atoms/Status";
 import { Subtle } from "../../atoms/Subtle";
-import { PageHeaderSubtitle } from "../../moleculs/PageHeader.v4/components/PageHeaderSubtitle";
-// import { PageHeaderTitle } from "../../moleculs/PageHeader.v4/components/PageHeaderTitle";
-import { PageHeaderSubtitleItem } from "../../moleculs/PageHeader.v4/components/PageHeaderSubtitleItem";
-import { PageHeaderSubtitleLinkItem } from "../../moleculs/PageHeader.v4/components/PageHeaderSubtitleLinkItem";
 import { PageHeader } from "../../moleculs/PageHeader.v4/PageHeader";
 
 export const ChapterFour = () => {
@@ -40,21 +36,15 @@ export const ChapterFour = () => {
           />
         }
         subTitle={
-          <PageHeaderSubtitle
+          <PageHeader.SubTitle
             leftSide={
-              <PageHeaderSubtitleItem
+              <PageHeader.SubtitleItem
                 subtitleText="subTitle"
                 hightlightedText="whiteText"
                 hoverText="Request #123"
               />
             }
-            rightSide={
-              <PageHeaderSubtitleLinkItem
-                linkText="Request #123"
-                to="link/to/somewhere"
-                textBeforeLink="Request:"
-              />
-            }
+            rightSide={<Status text="Booked" color="error" />}
             extraInfo={<Status text="Booked" color="error" />}
           />
         }

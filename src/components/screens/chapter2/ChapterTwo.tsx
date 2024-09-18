@@ -28,7 +28,7 @@ export const ChapterTwo = () => (
         actionBar={<ColorderBox color="purple">actionBar</ColorderBox>}
       />
     </Box>
-    {/* //---------------------------------- */}
+    {/* //--------------------------------- */}
     <Box py={4}>
       <PageHeader
         breadcrumbs={<ColorderBox color="red">breadcrumbs</ColorderBox>}
@@ -37,7 +37,7 @@ export const ChapterTwo = () => (
         actionBar={<ColorderBox color="purple">actionBar</ColorderBox>}
       />
     </Box>
-    {/* //---------------------------------- */}
+    {/* //--------------Action-Bar-------------------- */}
     <Box py={4}>
       <PageHeader
         breadcrumbs={<ColorderBox color="red">breadcrumbs</ColorderBox>}
@@ -50,7 +50,7 @@ export const ChapterTwo = () => (
         }
       />
     </Box>
-    {/* //---------------------------------- */}
+    {/* //--------------Add-Breadcrumbs------------------- */}
     <Box py={4}>
       <PageHeader
         breadcrumbs={
@@ -68,7 +68,7 @@ export const ChapterTwo = () => (
         }
       />
     </Box>
-    {/* //---------------------------------- */}
+    {/* //----------------Add-Title----------------- */}
     <Box py={4}>
       <PageHeader
         breadcrumbs={
@@ -103,7 +103,7 @@ export const ChapterTwo = () => (
         }
       />
     </Box>
-    {/* //---------------------------------- */}
+    {/* //-----------------Add-Subtitle----------------- */}
     <Box py={4}>
       <PageHeader
         breadcrumbs={
